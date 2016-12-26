@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-$this->title = Yii::t('app', 'EduSec | Login');
+$this->title = Yii::t('app', 'Vibernets | Login');
 ?>
 <div class="login-box">
       <div class="login-logo">
