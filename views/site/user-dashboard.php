@@ -66,10 +66,7 @@ $this->registerJs(
 		<?php $stuMsg= app\modules\dashboard\models\MsgOfDay::find()->where('is_status = 0  AND (msg_user_type = "E" OR msg_user_type = "0")')->one();
 		if(!empty($stuMsg)) :
 		?>
-		<div class="callout callout-info msg-of-day">
-			    <h4><i class="fa fa-bullhorn"></i> <?php echo Yii::t('app', 'Message of day box') ?></h4>
-			    <p><marquee onmouseout="this.setAttribute('scrollamount', 6, 0);" onmouseover="this.setAttribute('scrollamount', 0, 0);" scrollamount="6" behavior="scroll" direction="left"><?= $stuMsg->msg_details; ?></marquee></p>
-		</div>
+		
 		<?php endif; ?>
 
                     <div class="row">

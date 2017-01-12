@@ -63,17 +63,9 @@ $this->registerJs(
 	<?php  $msg = app\modules\dashboard\models\MsgOfDay::find()->andWhere(['is_status' => 0,'msg_user_type'=> ['0','E' ]])->one(); ?>
 <?php		if(!empty($msg))
 		{ ?>
-		<div class="callout callout-info show msg-of-day" >
-		    <h4><i class="fa fa-bullhorn"></i> <?php echo Yii::t('app', 'Message of day box') ?></h4>
-		    <marquee onmouseout="this.setAttribute('scrollamount', 6, 0);" onmouseover="this.setAttribute('scrollamount', 0, 0);" scrollamount="6" behavior="scroll" direction="left"><?php echo $msg->msg_details; ?></marquee>
-
-		</div>
+		
 		<?php } else {   ?>
-		<div class="callout callout-info hide msg-of-day" >
-		    <h4><?php echo Yii::t('app', 'Message of day box') ?></h4>
-		   	<marquee behavior="scroll" direction="left"></marquee>
-
-		</div>
+		
 		<?php } ?>
        <?php $empSession = Yii::$app->session->get('emp_id'); ?>
        <?php $EmpMaster = app\modules\employee\models\EmpMaster::find()->andWhere(['emp_master_id' => $empSession])->one(); ?>
