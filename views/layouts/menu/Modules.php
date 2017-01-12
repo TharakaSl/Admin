@@ -23,10 +23,10 @@
 	?>
 	    <li><?= Html::a('<i class="fa fa-money"></i> <span>'.Yii::t('fees', 'Fees').'</span>', ['/fees/default/index']); ?></li>
 	<?php }
-	      if(Yii::$app->user->can('/report/default/index')) {
+	     /* if(Yii::$app->user->can('/report/default/index')) {
 	?>
 	    <li><?= Html::a('<i class="fa fa-bar-chart"></i> <span>'.Yii::t('report', 'Report Center').'</span>', ['/report/default/index']); ?></li>
-	<?php }
+	<?php } */
 	      if(Yii::$app->user->can('Rights')) {
 	?>
 	    <li><?= Html::a('<i class="fa fa-user-secret"></i> <span>'.Yii::t('urights', 'User Rights').'</span>', ['/rights/']); ?></li>

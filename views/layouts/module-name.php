@@ -39,7 +39,7 @@ use yii\helpers\Html;
             <li>
 				<?= Html::a('<i class="fa fa-line-chart text-blue fa-2x"></i> <h4>'.Yii::t('report', 'Report Center').'</h4>', ['/report/default/index']);?>
             </li>
-			<?php endif; ?>
+			<?php endif; ?> 
 			<?php if(Yii::$app->user->can('Rights')) : ?>
             <li>
 				<?= Html::a('<i class="fa fa-user-secret text-orange fa-2x"></i> <h4>'.Yii::t('urights', 'User Rights').'</h4>', ['/rights/assignment/index']);?>
