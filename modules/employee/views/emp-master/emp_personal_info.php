@@ -150,9 +150,9 @@ for($j=0;$j<=11;$j++)
 		<div class = "col-sm-4 col-xs-12">
 		    <?= $form->field($info, 'emp_maritalstatus')->dropDownList($info->getMaritialStatus(),['prompt'=>Yii::t('stu','--- Select Status ---')]) ?>
 		</div>
-		<div class = "col-sm-4 col-xs-12">	
+		<!--<div class = "col-sm-4 col-xs-12">	
 		    <?= $form->field($model, 'emp_master_nationality_id')->dropDownList(ArrayHelper::map(app\models\Nationality::find()->all(),'nationality_id','nationality_name'),['prompt'=> Yii::t('stu', '--- Select Nationality ---')]) ?>
-		</div>
+		</div>-->
 		<div class = "col-sm-4 col-xs-12">
 			<div class ="">
 				<label for="totalExperience">Total Experience</label>
